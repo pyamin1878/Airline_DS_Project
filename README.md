@@ -1,20 +1,23 @@
 ![Alt text](Images/airplane_readme_final.png)
 # Aviation Exploration Analysis
 ## Overview
-- Our company is making the venture into the airline industry in order to diversify our portfolio. We have been tasked with determining which aircraft carry the lowest risk. The data has been provided in this [Aviation Accident Database 1948-2022](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) which is publicly available through [kaggle](https://www.kaggle.com/) datasets.  
+Our company is making the venture into the airline industry in order to diversify our portfolio. We have been tasked with determining which aircraft carry the lowest risk. The data has been provided in this [Aviation Accident Database 1948-2022](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) which is publicly available through [kaggle](https://www.kaggle.com/) datasets.  
 ## Business Understanding
-- Requirements and Objectives from our new director of aviation is to decide which aircraft our less accident prone and generally safer so that our company can purchase them
+Requirements and objectives from our new director of aviation is to decide which aircraft our less accident prone and generally safer so that our company can purchase them.
 ## Data Understanding
 ### Examining the data with a wider lens
-We were given a `.csv` file of raw data from the National Transportation Safety Board [NTSB](https://www.ntsb.gov/Pages/AviationQueryv2.aspx) that we imported into a jupyter notebook
-#### Rows
+We were given a `.csv` file of raw data from the National Transportation Safety Board [NTSB](https://www.ntsb.gov/Pages/AviationQueryv2.aspx) that we imported into a jupyter notebook with [pandas](https://pandas.pydata.org/) a flexible python tool for data analysis and manipulation. 
+### Rows
 - Specifies that each incident that occurs with aircraft as an `'accident'` 
-##### Columns
-- The location and region of where accidents occured
-- The specifications of each aircraft including the make, model, engine type, and # engines
-- Total Injuries
-- Flight Status as well as weather conditions on that day.
+### Columns
+- The location, region, and event date of where accidents occured
+- The specifications of each aircraft including the make, model, engine type, and `n` of engines
+- Injuries were listed in columns with subcategories: fatal, nonfatal, minor, and injured
+- The last few columns mention flight status as well as weather conditions
+
+There was also a substantial portion of the dataset that contained null values. 
 ## Data Preparation (Can be really short in README)
+In order to prepare the data for analysis and visualization for business recommendations, alot of cleaning and manipulation was required. Creating a subset of the data into relevant columns was the first step. We also had the issue of null values which were replaced with zeros, measures of central tendency such as **mean**, **median**, and **mode**, as well as filling values with 'unknown' and 'N/A' that could not be filled with numerical values like floats and integers. Lastly we used a pandas method [.groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) to aggregate and transform the data.
 ## Analysis and Results/Recommendations
 ### Recommendation 1: Safest Engine 'type' based off fatal vs non fatal injuries
 - For the first business recommendation. We have analyzed percentages of fatal vs non fatal injuries according to the engine type of each aircraft in the dataset. The first engine we could recommend based off our data is **turbo fan**. The although this next recommendation should be taken with caution as it is involved with many incidents, **reciprocating** is another engine type we can recommend based on perecenatga of average fatal injuries.  
