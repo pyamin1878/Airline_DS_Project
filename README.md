@@ -5,6 +5,15 @@
 ## Business Understanding
 - Requirements and Objectives from our new director of aviation is to decide which aircraft our less accident prone and generally safer so that our company can purchase them
 ## Data Understanding
+### Examining the data with a wider lens
+We were given a `.csv` file of raw data from the National Transportation Safety Board [NTSB](https://www.ntsb.gov/Pages/AviationQueryv2.aspx) that we imported into a jupyter notebook
+#### Rows
+- Specifies that each incident that occurs with aircraft as an `'accident'` 
+##### Columns
+- The location and region of where accidents occured
+- The specifications of each aircraft including the make, model, engine type, and # engines
+- Total Injuries
+- Flight Status as well as weather conditions on that day.
 ## Data Preparation (Can be really short in README)
 ## Analysis and Results/Recommendations
 ### Recommendation 1: Safest Engine 'type' based off fatal vs non fatal injuries
@@ -15,6 +24,16 @@
 - Cost effective 
 - Twin or 2 engine plane has the highest fatal injury rate, but when an incident occurs it has a lower rate of aircraft damage
 ### Final Recommendation: Purchasing Airplanes based on make
-- The 'make' of the planes that we can recommend purchasing from our Airbus, Boeing, and McDonnell Douglas. These airplane makes have the lowest aircraft damage and the lowest amount of fatalities. 
+- The 'make' of the planes that we can recommend purchasing from are Airbus, Boeing, and McDonnell Douglas. These airplane makes have the lowest aircraft damage and the lowest amount of fatalities. 
 ## Conlusion and Next Steps
 ## Repo Structure
+```
+├── Data
+├── Images
+├── Notebooks
+│   ├──
+│   ├── 
+│   ├── 
+├── Final.ipynb
+├── README.md
+```
