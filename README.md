@@ -16,7 +16,7 @@ We were given a `.csv` file of raw data from the National Transportation Safety 
 - The last few columns mention flight status as well as weather conditions
 
 There was also a substantial portion of the dataset that contained null values. 
-## Data Preparation (Can be really short in README)
+## Data Preparation
 In order to prepare the data for analysis and visualization for business recommendations, alot of cleaning and manipulation was required. Creating a subset of the data into relevant columns was the first step. We also had the issue of null values which were replaced with zeros, measures of central tendency such as **mean**, **median**, and **mode**, as well as filling values with 'unknown' and 'N/A' that could not be filled with numerical values like floats and integers. Lastly we used a pandas method [.groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) to aggregate and transform the data.
 ## Analysis and Results/Recommendations
 ### Recommendation 1: Safest Engine 'type' based off fatal vs non fatal injuries
@@ -26,7 +26,7 @@ In order to prepare the data for analysis and visualization for business recomme
 - More damage in a single engine plane, but cheaper to purchase and maintain
 - Cost effective 
 - Twin or 2 engine plane has the highest fatal injury rate, but when an incident occurs it has a lower rate of aircraft damage
-### Final Recommendation: Purchasing Airplanes based on make
+### Recommendation 3: Purchasing Airplanes based on make
 - The 'make' of the planes that we can recommend purchasing from are Airbus, Boeing, and McDonnell Douglas. These airplane makes have the lowest aircraft damage and the lowest amount of fatalities. 
 ## Conlusion and Next Steps
 ## Repo Structure
