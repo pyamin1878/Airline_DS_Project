@@ -17,19 +17,19 @@ We were given a `.csv` file [Aviation_Data](https://github.com/pyamin1878/Airlin
 
 There was also a substantial portion of the dataset that contained null values that we will remove during data prep.
 
-We provide two cleaned datasets in the [Final Data](https://github.com/pyamin1878/Airline_DS_Project/tree/main/Final_Data) directory if you want to use that as a starting point. 
+We provide two cleaned datasets in the [Final Data](https://github.com/pyamin1878/Airline_DS_Project/tree/main/Final_Data) directory if you would like to use that as a starting point. 
 ## Data Preparation
-In order to prepare the data for analysis and visualization for business recommendations, alot of cleaning and manipulation was required. Creating a subset of the data into relevant columns was the first step. We also had the issue of null values which were replaced with zeros, measures of central tendency such as **mean**, **median**, and **mode**, as well as filling values with 'unknown' and 'N/A' that could not be filled with numerical values like floats and integers. Lastly we used a pandas method [.groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) to aggregate and transform the data.
+In order to prepare the data for analysis and visualization for business recommendations, a significant portion of cleaning and manipulation was required. Our goal was to create a cleaned subset of data with only relevant columns and no nulls. We replaced nulls with zeroes, measures of central tendancy, and common terms such as "N/A." Lastly we used a pandas method [.groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) to aggregate and transform the data.
 ## Analysis and Results/Recommendations
 ### Recommendation 1: Safest engine type based off fatal vs non fatal injuries
-- For the first business recommendation. We have analyzed percentages of fatal vs non fatal injuries according to the engine type of each aircraft in the dataset. The best engine we could recommend based off our data is **turbo fan**. 
-- Although this engine type we can recommend should be taken with caution as it is involved with many accidents, **reciprocating** is another engine type we can recommend based on perecentage of average fatal injuries.  
+- For the first business recommendation, we have analyzed percentages of fatal vs non-fatal injuries according to the engine type of each aircraft in the dataset. The best engine we could recommend based off our data is **turbofan**.   
 - We are excluding electric, geared turbofan, and turbo shaft because we have fewer than twelve data points for these three types of engines. 
 
 ![Alt text](Images/final_engine_bar_type.png)
 ### Recommendation 2: Single engine plane has less fatalities but more damage
 - There is more damage in a single engine plane based on average percentages in our data, but they are much more cost effective to purchase and maintain. 
 - Twin or Dual engine planes have the highest fatal injury rate, but when an incident occurs it has a lower rate of aircraft damage.
+- We recommend single engine planes for private chartered planes, and dual engine planes for commerical flights.
 
 ![Alt text](Images/final_image__number_engines_bar.png)
 ### Recommendation 3: Purchasing airplanes based on make
@@ -53,6 +53,8 @@ We can assert that Boeing and Airbus are the two aviation companies that are mak
 ```
 ├── Data
 ├── Final Data
+│   ├── df_subset_makes.csv
+│   ├── subset.csv
 ├── Images
 ├── Notebooks
 │   ├── pat_working_notebook.ipynb
