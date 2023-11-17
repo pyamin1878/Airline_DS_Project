@@ -1,7 +1,7 @@
 ![Alt text](Images/airplane_readme_final.png)
 # Aviation Exploration Analysis
 ## Overview
-Our company is making the venture into the airline industry in order to diversify our portfolio. We have been tasked with determining which aircraft carry the lowest risk. The data has been provided in this [Aviation Accident Database 1948-2022](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) which is publicly available through [kaggle](https://www.kaggle.com/) datasets.  
+Our company Patley is making the venture into the airline industry in order to diversify our portfolio. We have been tasked with determining which aircraft carry the lowest risk. The data has been provided in this [Aviation Accident Database 1948-2022](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) which is publicly available through [kaggle](https://www.kaggle.com/) datasets.  
 ## Business Understanding
 Requirements and objectives from our new director of aviation is to decide which aircraft our less accident prone and generally safer so that our company can purchase them.
 ## Data Understanding
