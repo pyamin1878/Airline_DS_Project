@@ -16,6 +16,8 @@ We were given a `.csv` file [Aviation_Data](https://github.com/pyamin1878/Airlin
 - The last few columns mention flight status as well as weather conditions
 
 There was also a substantial portion of the dataset that contained null values. 
+
+We provide two cleaned datasets in the [Final Data](https://github.com/pyamin1878/Airline_DS_Project/tree/main/Final_Data) directory if you want to use that as a starting point. 
 ## Data Preparation
 In order to prepare the data for analysis and visualization for business recommendations, alot of cleaning and manipulation was required. Creating a subset of the data into relevant columns was the first step. We also had the issue of null values which were replaced with zeros, measures of central tendency such as **mean**, **median**, and **mode**, as well as filling values with 'unknown' and 'N/A' that could not be filled with numerical values like floats and integers. Lastly we used a pandas method [.groupby()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) to aggregate and transform the data.
 ## Analysis and Results/Recommendations
@@ -37,6 +39,7 @@ In order to prepare the data for analysis and visualization for business recomme
 
 We provide a Tableau Dashboard with following visuals here: [Dashboard](https://public.tableau.com/app/profile/shelley.w8788/viz/AirlineProj2/Dashboard2)
 
+And our presentation slides: [Presentation](Images/Aviation_Data_Analysis_Presentation_1.pdf)
 ## Conlusion and Next Steps
 We can assert that Boeing and Airbus are the two aviation companies that are making the highest calibre of aircraft for safety. If we are purchasing for chartered flights or private jets it's best to go with single engine airplanes. Otherwise dual engine airplanes would be the best fit for commercial usage.
 ## Repo Structure
@@ -45,9 +48,11 @@ We can assert that Boeing and Airbus are the two aviation companies that are mak
 ├── Final Data
 ├── Images
 ├── Notebooks
-│   ├──
-│   ├── 
-│   ├── 
+│   ├── pat_working_notebook.ipynb
+│   ├── shelley_working_notebook.ipynb
+│   ├── student_working_notebook.ipynb
+├── .gitignore
 ├── Final.ipynb
+├── LICENSE
 ├── README.md
 ```
